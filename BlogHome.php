@@ -4,7 +4,7 @@ if (isset ($_POST ['submit']))
 {
 	include('Connection.php');
 	
-	$errorMessage = "";
+	$errorMessage = "Connection Failed";
 	
 	$Name=$_POST['Name'];
 	$Email=$_POST['Email'];
@@ -20,7 +20,7 @@ if (isset ($_POST ['submit']))
 	
 	else
 	{
-		$sql = "INSERT INTO blog VALUES('$Name','$Email','$Title','$Comment')";
+		$sql = "INSERT INTO blog VALUES('$name','$email','$title','$comment')";
 	
 		$data=mysqli_query($conn,$sql);
 		

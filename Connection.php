@@ -1,8 +1,8 @@
 <body>
 <?php
-$dbhost ='localhost';
+$dbhost ='MySql@localhost:3306';
 $dbuser ='root';
-$dbpass='';
+$dbpass='1234';
 $db='budgettravelsrilanka';
 
 $conn= mysqli_connect($dbhost,$dbuser,$dbpass);
