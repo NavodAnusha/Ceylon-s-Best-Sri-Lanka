@@ -1,145 +1,409 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TRAVEL TRIPS</title>
-<link rel="icon" href="Images/Logo_Data/Logo_BudgettravelSL_.png" type="image/JPG" sizes="16x16">
-<link rel='stylesheet' id='main-style-css' href="css/navigation.css" type='text/css' media='all'/>
-<link rel='stylesheet' id='main-style-css' href="css/slideshow.css" type='text/css' media='all'/>
-<link rel='stylesheet' id='main-style-css' href="css/padding.css" type='text/css' media='all'/>
-<link rel='stylesheet' id='main-style-css' href="css/polaroid.css" type="text/css" media='all'/>
-<section id="site" class="layout-full">
-<div class="site-content">
-<header id="masthead" role="banner" class="clearfix with-menu" itemscope itemtype="">
-<div class="no-print top-strip">
-<div class="wrapper clearfix">
-<form method="get" id="searchform" action="" role="search">
-<input type="text" name="s" id="s" value="Search" onFocus="if(this.value=='Search')this.value='';" onBlur="if(this.value=='')this.value='Search';"/>
-<button type="submit">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TRAVEL TRIPS</title>
+    <link rel="icon" href="Images/Logo_Data/Logo_BudgettravelSL_.png" type="image/JPG" sizes="16x16">
+    <link rel='stylesheet' id='main-style-css' href="css/navigation.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='main-style-css' href="css/slideshow.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='main-style-css' href="css/padding.css" type='text/css' media='all' />
+    <link rel='stylesheet' id='main-style-css' href="css/polaroid.css" type="text/css" media='all' />
+    <section id="site" class="layout-full">
+        <div class="site-content">
+            <header id="masthead" role="banner" class="clearfix with-menu" itemscope itemtype="">
+                <div class="no-print top-strip">
+                    <div class="wrapper clearfix">
+                        <form method="get" id="searchform" action="" role="search">
+                            <input type="text" name="s" id="s" value="Search" onFocus="if(this.value=='Search')this.value='';" onBlur="if(this.value=='')this.value='Search';" />
+                            <button type="submit">
 <i class="icomoon-search"></i>
 </button>
-</form>
-<nav class="secondary-menu" role="navigation" itemscope="itemscope" itemtype=""><ul id="" class="menu"><li>
-<a href="About Us.html">ABOUT US </a></li>
-<li>
-<a href="Gallery.html">GALLERY</a></li>
-<li>
-<a href="Sri Lanka.html">SRI LANKA</a></li>
-<li>
-<a href="Travel Resources.html">Travel Resources</a></li>
-<li>
-<a href="Contact Us.html">Contact Us</a></li>
-</ul></nav> </div>
+                        </form>
+                        <nav class="secondary-menu" role="navigation" itemscope="itemscope" itemtype="">
+                            <ul id="" class="menu">
+                                <li>
+                                    <a href="About Us.html">ABOUT US </a></li>
+                                <li>
+                                    <a href="Gallery.html">GALLERY</a></li>
+                                <li>
+                                    <a href="Sri Lanka.html">SRI LANKA</a></li>
+                                <li>
+                                    <a href="Travel Resources.html">Travel Resources</a></li>
+                                <li>
+                                    <a href="Contact Us.html">Contact Us</a></li>
+                                <li>
+                                    <a href="http://127.0.0.1:8000/api">Chat With Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
 
 
- 
-<div id="branding" class="animated">
-<div class="wrapper">
-<div class="header header-default">
-<a class="logo" href="index.html">
-<img src="Images/1.jpg" alt=" - Travel in style, on a budget" width="970" height="234"/>
-</a> 
-</div>
- 
-<div class=""><nav class="wrapper main-menu" role="navigation"><ul id="" class="menu"><li>
-<a href="index.html">HOME</a>
-<ul class="sub-links">
-</ul>
-</li>
-<li>
-<a href="Tours.html">Tours</a>
-</li>
-<li>
-<a href="Travel Trips.html">Travel Trips</a>
-</li>
 
-<li>
-<a href="Inspiration.html">Inspiration</a></li>
-<li>
-<a href="Services.html">Services</a></li>
-</li>
-</ul></nav></div> 
+                    <div id="branding" class="animated">
+                        <div class="wrapper">
+                            <div class="header header-default">
+                                <a class="logo" href="index.html">
+                                    <img src="Images/1.jpg" alt=" - Travel in style, on a budget" width="970" height="234" />
+                                </a>
+                            </div>
+
+                            <div class="">
+                                <nav class="wrapper main-menu" role="navigation">
+                                    <ul id="" class="menu">
+                                        <li>
+                                            <a href="index.html">HOME</a>
+                                            <ul class="sub-links">
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="Tours.html">Tours</a>
+                                        </li>
+                                        <li>
+                                            <a href="Travel Trips.html">Travel Trips</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="Inspiration.html">Inspiration</a></li>
+                                        <li>
+                                            <a href="Services.html">Services</a></li>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
 </head>
 <br>
 
-    <!-- #region Jssor Slider Begin -->
-    <script src="js/jssor.slider-23.1.6.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
+<!-- #region Jssor Slider Begin -->
+<script src="js/jssor.slider-23.1.6.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    jssor_1_slider_init = function() {
 
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
+        var jssor_1_SlideshowTransitions = [{
+            $Duration: 1200,
+            x: 0.3,
+            $During: {
+                $Left: [0.3, 0.7]
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: -0.3,
+            $SlideOut: true,
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: -0.3,
+            $During: {
+                $Left: [0.3, 0.7]
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: 0.3,
+            $SlideOut: true,
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: 0.3,
+            $During: {
+                $Top: [0.3, 0.7]
+            },
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: -0.3,
+            $SlideOut: true,
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: -0.3,
+            $During: {
+                $Top: [0.3, 0.7]
+            },
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: 0.3,
+            $SlideOut: true,
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: 0.3,
+            $Cols: 2,
+            $During: {
+                $Left: [0.3, 0.7]
+            },
+            $ChessMode: {
+                $Column: 3
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: 0.3,
+            $Cols: 2,
+            $SlideOut: true,
+            $ChessMode: {
+                $Column: 3
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: 0.3,
+            $Rows: 2,
+            $During: {
+                $Top: [0.3, 0.7]
+            },
+            $ChessMode: {
+                $Row: 12
+            },
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: 0.3,
+            $Rows: 2,
+            $SlideOut: true,
+            $ChessMode: {
+                $Row: 12
+            },
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: 0.3,
+            $Cols: 2,
+            $During: {
+                $Top: [0.3, 0.7]
+            },
+            $ChessMode: {
+                $Column: 12
+            },
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            y: -0.3,
+            $Cols: 2,
+            $SlideOut: true,
+            $ChessMode: {
+                $Column: 12
+            },
+            $Easing: {
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: 0.3,
+            $Rows: 2,
+            $During: {
+                $Left: [0.3, 0.7]
+            },
+            $ChessMode: {
+                $Row: 3
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: -0.3,
+            $Rows: 2,
+            $SlideOut: true,
+            $ChessMode: {
+                $Row: 3
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: 0.3,
+            y: 0.3,
+            $Cols: 2,
+            $Rows: 2,
+            $During: {
+                $Left: [0.3, 0.7],
+                $Top: [0.3, 0.7]
+            },
+            $ChessMode: {
+                $Column: 3,
+                $Row: 12
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            x: 0.3,
+            y: 0.3,
+            $Cols: 2,
+            $Rows: 2,
+            $During: {
+                $Left: [0.3, 0.7],
+                $Top: [0.3, 0.7]
+            },
+            $SlideOut: true,
+            $ChessMode: {
+                $Column: 3,
+                $Row: 12
+            },
+            $Easing: {
+                $Left: $Jease$.$InCubic,
+                $Top: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            $Delay: 20,
+            $Clip: 3,
+            $Assembly: 260,
+            $Easing: {
+                $Clip: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            $Delay: 20,
+            $Clip: 3,
+            $SlideOut: true,
+            $Assembly: 260,
+            $Easing: {
+                $Clip: $Jease$.$OutCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            $Delay: 20,
+            $Clip: 12,
+            $Assembly: 260,
+            $Easing: {
+                $Clip: $Jease$.$InCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }, {
+            $Duration: 1200,
+            $Delay: 20,
+            $Clip: 12,
+            $SlideOut: true,
+            $Assembly: 260,
+            $Easing: {
+                $Clip: $Jease$.$OutCubic,
+                $Opacity: $Jease$.$Linear
+            },
+            $Opacity: 2
+        }];
 
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $SlideshowOptions: {
+        var jssor_1_options = {
+            $AutoPlay: 1,
+            $SlideshowOptions: {
                 $Class: $JssorSlideshowRunner$,
                 $Transitions: jssor_1_SlideshowTransitions,
                 $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
+            },
+            $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
+            },
+            $ThumbnailNavigatorOptions: {
                 $Class: $JssorThumbnailNavigator$,
                 $Cols: 10,
                 $SpacingX: 8,
                 $SpacingY: 8,
                 $Align: 360
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*responsive code begin*/
-            /*remove responsive code if you don't want the slider scales while window resizing*/
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 800);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
             }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*responsive code end*/
         };
-    </script>
 
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:800px;height:456px; float:left;overflow:hidden;visibility:hidden;background-color:#24262e;">
-      <!-- Loading Screen -->
-      <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*responsive code begin*/
+        /*remove responsive code if you don't want the slider scales while window resizing*/
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 800);
+                jssor_1_slider.$ScaleWidth(refSize);
+            } else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        /*responsive code end*/
+    };
+</script>
+
+<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:800px;height:456px; float:left;overflow:hidden;visibility:hidden;background-color:#24262e;">
+    <!-- Loading Screen -->
+    <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
         <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
         <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-      </div>
-      <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:800px;height:356px;overflow:hidden;">
+    </div>
+    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:800px;height:356px;overflow:hidden;">
         <div> <img data-u="image" src="img/01.jpg" /> <img data-u="thumb" src="img/thumb-01.jpg" /></div>
         <div> <img data-u="image" src="img/02.jpg" /> <img data-u="thumb" src="img/thumb-02.jpg" /></div>
         <div> <img data-u="image" src="img/03.jpg" /> <img data-u="thumb" src="img/thumb-03.jpg" /></div>
@@ -153,25 +417,27 @@
         <div> <img data-u="image" src="img/11.jpg" /> <img data-u="thumb" src="img/thumb-11.jpg" /></div>
         <div> <img data-u="image" src="img/12.jpg" /> <img data-u="thumb" src="img/thumb-12.jpg" /></div>
         <a data-u="any" href="https://www.jssor.com" style="display:none">javascript slider</a></div>
-      <!-- Thumbnail Navigator -->
-      <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+    <!-- Thumbnail Navigator -->
+    <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
         <!-- Thumbnail Item Skin Begin -->
         <div data-u="slides" style="cursor: default;">
-          <div data-u="prototype" class="p">
-            <div class="w">
-              <div data-u="thumbnailtemplate" class="t"></div>
+            <div data-u="prototype" class="p">
+                <div class="w">
+                    <div data-u="thumbnailtemplate" class="t"></div>
+                </div>
+                <div class="c"></div>
             </div>
-            <div class="c"></div>
-          </div>
         </div>
         <!-- Thumbnail Item Skin End -->
-      </div>
-      <!-- Arrow Navigator -->
-      <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span> <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span></div>
-    <script type="text/javascript">jssor_1_slider_init();</script>
-    <!-- #endregion Jssor Slider End -->
-    </body>
-    
+    </div>
+    <!-- Arrow Navigator -->
+    <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span> <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span></div>
+<script type="text/javascript">
+    jssor_1_slider_init();
+</script>
+<!-- #endregion Jssor Slider End -->
+</body>
+
 <!--
     
 
@@ -248,133 +514,136 @@ if (frm.Comment.value == "")
 </head>
 
 <body>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	
-	<br><br>
-	
-<div class="polaroid">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<img id="myImg" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
+    <br><br>
 
-<div class="container">
-    <p><b>What is a Sri Lankan Visa?</b><br>
-   
-  A Sri Lankan visa is an endorsement on a passport or a similar document to facilitate the legal entry of non Sri Lankans into the country and to regulate the period of their stay and the conditions governing such stay.<br><br><br><br><br><br><br></p>
- </div>
-	</div>
-	
-	
-	
-<div class="test">
-	
-<img id="myImg2" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
+    <div class="polaroid">
 
-	
+        <img id="myImg" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
 
-<div class="container">
-    <p><b>Travel Trips </b><br>
-    With effect from 1st January 2012, all Holiday or Business travelers to Sri Lanka must have Electronic Travel Authorization (ETA) for entering in to Sri Lanka. Please visit www.eta.gov.lk for more information. When applying ETA by third parties payments are to be made through the arrangement made in our website www.eta.gov.lk and obtain acknowledgement of ETA application. Any payments made to other websites or agencies are not valid to process a valid ETA. Therefore, always ensure that the payments made by accessing to Sri Lanka ETA website and avoid making repayment at the port of entry to Sri Lanka<br></be></p>
-</div>
-	
-	</div>
-<br><br>
+        <div class="container">
+            <p><b>What is a Sri Lankan Visa?</b><br> A Sri Lankan visa is an endorsement on a passport or a similar document to facilitate the legal entry of non Sri Lankans into the country and to regulate the period of their stay and the conditions governing
+                such stay.<br><br><br><br><br><br><br></p>
+        </div>
+    </div>
 
 
 
-<!--Break 1st lane -->
+    <div class="test">
+
+        <img id="myImg2" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
 
 
-<p class="padding15"</p>
+
+        <div class="container">
+            <p><b>Travel Trips </b><br> With effect from 1st January 2012, all Holiday or Business travelers to Sri Lanka must have Electronic Travel Authorization (ETA) for entering in to Sri Lanka. Please visit www.eta.gov.lk for more information. When
+                applying ETA by third parties payments are to be made through the arrangement made in our website www.eta.gov.lk and obtain acknowledgement of ETA application. Any payments made to other websites or agencies are not valid to process a
+                valid ETA. Therefore, always ensure that the payments made by accessing to Sri Lanka ETA website and avoid making repayment at the port of entry to Sri Lanka<br></be>
+            </p>
+        </div>
+
+    </div>
+    <br><br>
 
 
-<div class="test">
-  <img id="myImg3" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
-<div class="container">
-<p><b>What are the Types of Sri Lankan Visas?</b>
-<br><br> There are four kinds of visas which permit a person to enter and/or stay in Sri Lanka
-	<br><br><br><br><br>
-	</p>
-	
-</div>
-</div>
-	
-	
-<div class="polaroid">
-<img id="myImg4" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
-  
 
-  
-<div class="container">
-	<p><b>Visit Visa</b><br>
-		A Visit Visa is an entry permit signifying the consent of the Sri Lankan Government for the admission of a foreign national to the country. The Visa contains details of the period of time and the condition/s of the stay. There are two sub-categories which come under visit visas – Tourist Visit Visa
-A Tourist Visa is issued to bona-fide tourists who want to enter Sri Lanka for sightseeing, excursions, relaxation, visit relatives or yoga training for a short period of time.
-</p>
-</div>
-	</div>
-
-<!--Break-->
-
-<br><br>	
-
-<p class="padding15"</p>
+    <!--Break 1st lane -->
 
 
-<div class="test">
-  <img id="myImg3" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
-<div class="container">
-<p><b>Business Visit Visa</b>
-<br><br>A Business Visa is issued to foreign nationals who visit Sri Lanka for business purposes for short periods of time. This visa may be issued for single, double or multiple journeys.
-<br><br><br>
-</p>
-</div>
-</div>
-	
+    <p class="padding15" </p>
 
-<div class="polaroid">
-<img id="myImg4" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
-  
 
-  
-<div class="container">
-<p><b>Department of Immigration and Emigration </b><br>
-Ananda Rajakaruna Mawatha, 
-<br>Maradana, 
-<br>Colombo 10. 
-<br>Tel: +94-11-5329000 / +94-11-5329316/20/21/25 
-<br>www.immigration.gov.lk
+        <div class="test">
+            <img id="myImg3" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
+            <div class="container">
+                <p><b>What are the Types of Sri Lankan Visas?</b>
+                    <br><br> There are four kinds of visas which permit a person to enter and/or stay in Sri Lanka
+                    <br><br><br><br><br>
+                </p>
 
-</p>
-</div>
-</div>
-	
-	
+            </div>
+        </div>
 
-<!--Break-->
-	
 
-<div class="polaroid">
+        <div class="polaroid">
+            <img id="myImg4" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
 
-<img id="myImg" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
 
-<div class="container">
- <p><b>Custom Imports</b><br>  
- You are allowed to bring into the country duty free 1.5 litres of spirits, two bottles of wine, a quarter-litre of toilet water, and a small quantity of perfume and souvenirs with a value not exceeding US $250. The import of personal equipment such as cameras and laptop computers is allowed but must be declared on arrival. However, personal equipment must be taken out of the country upon the visitor.s departure. The import of non-prescription drugs and pornography of any form is an offence.</p>
- </div>
 
-	</div>
-	
-	
-	
-<div class="test">
-	
-<img id="myImg2" src="Images/01.jpg" width="500" height="333.328" style="width:100%">
-	
-<div class="container">
-    <p><b>Photo Permits & Entrance Charges</b><br>
-		Sri Lanka is a photographer’s delight. However, permits are required before you can take photos at certain sites. Entrance tickets to individual sites are available only from 6 a.m. to 10 a.m. These tickets cover charges for photography, recording and parking.Rates are quoted in US Dollars and rupee parities are subject to fluctuation.<br><br><br></be></p>
-</div>
-	
-	</div>
-	 
-	</body>
+            <div class="container">
+                <p><b>Visit Visa</b><br> A Visit Visa is an entry permit signifying the consent of the Sri Lankan Government for the admission of a foreign national to the country. The Visa contains details of the period of time and the condition/s of the
+                    stay. There are two sub-categories which come under visit visas – Tourist Visit Visa A Tourist Visa is issued to bona-fide tourists who want to enter Sri Lanka for sightseeing, excursions, relaxation, visit relatives or yoga training
+                    for a short period of time.
+                </p>
+            </div>
+        </div>
+
+        <!--Break-->
+
+        <br><br>
+
+        <p class="padding15" </p>
+
+
+            <div class="test">
+                <img id="myImg3" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
+                <div class="container">
+                    <p><b>Business Visit Visa</b>
+                        <br><br>A Business Visa is issued to foreign nationals who visit Sri Lanka for business purposes for short periods of time. This visa may be issued for single, double or multiple journeys.
+                        <br><br><br>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="polaroid">
+                <img id="myImg4" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
+
+
+
+                <div class="container">
+                    <p><b>Department of Immigration and Emigration </b><br> Ananda Rajakaruna Mawatha,
+                        <br>Maradana,
+                        <br>Colombo 10.
+                        <br>Tel: +94-11-5329000 / +94-11-5329316/20/21/25
+                        <br>www.immigration.gov.lk
+
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!--Break-->
+
+
+            <div class="polaroid">
+
+                <img id="myImg" src="Images/01.jpg" alt="Trolltunga, Norway" width="500" height="333.328" style="width:100%">
+
+                <div class="container">
+                    <p><b>Custom Imports</b><br> You are allowed to bring into the country duty free 1.5 litres of spirits, two bottles of wine, a quarter-litre of toilet water, and a small quantity of perfume and souvenirs with a value not exceeding US
+                        $250. The import of personal equipment such as cameras and laptop computers is allowed but must be declared on arrival. However, personal equipment must be taken out of the country upon the visitor.s departure. The import of non-prescription
+                        drugs and pornography of any form is an offence.</p>
+                </div>
+
+            </div>
+
+
+
+            <div class="test">
+
+                <img id="myImg2" src="Images/01.jpg" width="500" height="333.328" style="width:100%">
+
+                <div class="container">
+                    <p><b>Photo Permits & Entrance Charges</b><br> Sri Lanka is a photographer’s delight. However, permits are required before you can take photos at certain sites. Entrance tickets to individual sites are available only from 6 a.m. to 10
+                        a.m. These tickets cover charges for photography, recording and parking.Rates are quoted in US Dollars and rupee parities are subject to fluctuation.<br><br><br></be>
+                    </p>
+                </div>
+
+            </div>
+
+</body>
+
 </html>
